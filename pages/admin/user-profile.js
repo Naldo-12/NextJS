@@ -64,10 +64,13 @@ function UserProfile() {
                 </GridItem>
                 <GridItem xs={12} sm={12} md={3}>
                   <CustomInput
-                    labelText="Username"
-                    id="username"
+                    labelText="Username (disabled)"
+                    id="username-disabled"
                     formControlProps={{
                       fullWidth: true,
+                    }}
+                    inputProps={{
+                      disabled: false,
                     }}
                   />
                 </GridItem>
